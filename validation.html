@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <link rel="stylesheet" href="validationCss.css">
+        <link rel="stylesheet" href="validationJs.js">
+        <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="mainGrid"> 
+        
+
+        <div class="container">
+            <div class="navbar">
+                <span class="logo">F i t n e s s &ensp; C l u b</span>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+        </div>  
+    </div>
+    <div class="content">
+        <div class="formContainner"><br>
+            <div class="title"> N E W &ensp; J O I N I E</div><br>
+            <form action="#">
+                <div class="user-details">
+                    <div class="input-Box">
+                        <span class="details">Full Name</span>
+                        <input type="text" id ="name"placeholder="Enter your name" onkeyup="validateName()" >
+                        <span class ="err" id="nameErr"></span>
+                    </div>
+    
+                    <div class="input-Box">
+                        <span class="details">Email</span>
+                        <input type="text" placeholder="Enter your email" id="email" onkeyup="validateEmail()">
+                        <span class ="err" id="emailErr"></span>
+                    </div>
+    
+                    <div class="input-Box">
+                        <span class="details">Phone Number</span>
+                        <input type="number"  placeholder="Enter your number" id="numbers" onkeyup="validateNumber()">
+                        <span class ="err" id="numberErr"></span>
+                    </div>
+    
+                    <div class="input-Box">
+                        <span class="details">Date of Birth</span>
+                        <input type="date"  placeholder="Enter your DoB" id="date" onchange="validateDate()">
+                        <span class ="err" id="dateErr"></span>
+                    </div>
+    
+                    <div class="input-Box">
+                        <span class="details">Height</span>
+                        <input type="text" placeholder="Enter your height 140cm - 220cm" id="height" onkeyup="validateHeight()">
+                        <span class ="err" id="heightErr"></span>
+                    </div>
+    
+                    <div class="input-Box">
+                        <span class="details">Weight</span>
+                        <input type="text" placeholder="Enter your weight 40-150 kg" id="weight" onkeyup="validateWeight()">
+                        <span class ="err" id="weightErr"></span>
+                    </div>
+                </div>
+    
+                <div class="button">
+                    <input type="submit" onclick="book()" value="Book">
+                </div>
+            </form>
+            
+    
+        </div>
+    </div>
+    <div class="footer" >
+        <div>
+            <h3>Cheetah Fitness</h3>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            
+        
+        </div>
+        <div>
+            <h3>Coures</h3>
+           
+            <a href="#">Boxing</a>
+            <a href="#">Basic Muscles</a>
+            <a href="#">Body Buliding</a>
+
+        </div>
+        <div>
+            <h3>Profile</h3>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">Youtube</a>
+        </div>
+        <div>
+            <h3>Copyright</h3>
+            <a href="#">Copyright 1999-2023 by Refsnes Data. All Rights Reserved.</a>
+        </div>
+        
+        
+    </div>
+    <script type="text/javascript"src="validationJs.js"> </script>
+</body>
+</html>
+

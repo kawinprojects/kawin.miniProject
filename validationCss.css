@@ -1,0 +1,166 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+.container
+{
+    background-color: #ff0000;
+}
+.navbar
+{
+    width:85%;
+    margin:auto;
+    justify-content:space-between ;
+    padding: 0.7%;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.logo{
+    cursor: pointer;
+    font-size: 40px;
+    color:white;
+    
+}
+
+.navbar ul li
+{
+    display:inline-block;
+    position: relative;
+    margin-left: 70px;
+
+}
+
+
+
+.navbar ul li a{
+    margin-right: 1px;
+    text-decoration: none;
+    justify-content: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after
+{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: black;
+    position:absolute;
+    left: 0;
+    bottom:-10px;
+    transition: 0.4s;  
+}
+.navbar ul li:hover::after{
+    width:100%;
+}
+
+.content{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background:url("b.jpg") no-repeat;
+    background-size: cover;
+
+}
+.formContainner
+{
+    max-width: 700px;
+    width: 100%;
+    /* opacity: 0.9; */
+    color: white;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+.formContainner .title
+{
+    
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.formContainner form .user-details
+{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    column-gap: px;
+
+}
+form .user-details .input-Box
+{
+    margin: 20px 0 12px 0;
+    width: 48%;
+}
+
+
+.user-details .input-Box .details{
+    font-weight: 500;
+    display: block;
+    line-height:50px;
+    
+}
+.user-details .input-Box input{
+    height: 45px;
+    width: 100%;
+    
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width:2px ;
+}
+
+
+form .button
+{
+    height: 45px;
+    margin: 45px 0;
+}
+
+form .button input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+}
+form .button input:hover{
+    color:white;
+    background-color: black;
+}
+.err{
+    color: red;
+    font-weight:bold;
+    float: right;
+}
+.footer
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    text-align: left;
+    background-color: black;
+    padding: 1%;
+    color: white;
+    text-decoration: none;  
+    list-style: none;
+}
+
+.footer a{
+    color: white;
+    display: block;
+}
+.footer h3{
+    line-height: 50px;
+}

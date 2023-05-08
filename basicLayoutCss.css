@@ -1,0 +1,282 @@
+ *{
+    margin: 0;
+    font-family: 'Metrophobic' , sans-serif
+} 
+
+
+
+/* ------------------------------------------ */
+.container
+{
+    background-color: #ff0000;
+    margin-bottom: 5px;
+}
+.navbar
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* gap: 20px; */
+    
+}
+
+.logo{
+    cursor: pointer;
+    font-size:  50px;
+    color:white;
+    grid-column: span 1;
+    text-align: center;
+    /* margin-top: 25px; */
+    
+}
+
+.navbar ul{
+    grid-column: span 1;
+    text-align: center;
+}
+.navbar ul li
+{
+    display:inline-block;
+    background-color: black;
+    border-radius: 10px;
+    padding: 1%;
+    margin: 5px;
+}
+.navbar ul li button
+{
+    text-align: center;
+    background-color: #ff0000;
+    border-radius: 10px;
+    padding: 10px;
+    color: #ff0000  ;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    justify-content: center;
+
+    
+}
+/* ----------------------------- */
+
+
+
+.picAndTextGird
+{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.img{
+        grid-column: span 1;
+        background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5)),url("dumbell1\ \(1\).jpg") no-repeat;
+        background-size: cover;
+}
+.img .textInImg{
+    padding: 8%;
+    color: white;
+    text-align: center;
+    
+}
+.bigSizeFontInImg
+{
+    line-height: 50px;
+    font-size: 30px;
+}
+
+.buttonInImg
+{
+    padding: 1%;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #ff0000;
+    border:  1px solid whitesmoke;
+}
+.buttonInImg a
+{
+    font-size: larger;
+    font-family: cursive;
+    color: white;
+}
+
+.chooseProgram
+{
+   padding: 3%;
+    color: black;
+    text-align: center;
+}
+.chooseProgram p{
+    line-height: 20px;
+}
+
+.sameLine
+{
+    color: #ff0000;
+}
+.chooseProgramText 
+{
+    display: flex;
+    gap: 10px;
+    justify-content:center;
+    padding: 1%;
+}
+
+.imgGird
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    margin: 2% 5%;
+}
+.programsList 
+{
+    font-size: 20px;
+}
+
+.program
+{
+    text-align: center;
+    line-height: 30px;
+}
+.program img{
+    margin-top: 5px;
+    width: 35%;
+    height: 35%;
+    border-radius: 10px;
+    
+}
+.program h3{
+    line-height: 40px;
+    color:black;
+}
+
+.program .buttons{
+     line-height: 50px; 
+}
+
+.program button{
+        background-color: #ff0000;
+        padding: 1% 3%;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: large;
+        text-transform: uppercase;
+        text-align: center;
+        border: none;
+
+}
+
+a{
+    color:  whitesmoke;
+    text-decoration: none;
+}
+.fonts
+{
+    font-family: 'Metrophobic', sans-serif;
+}
+.program p{
+    
+    font-size: small;
+    color: black;
+    line-height: 20px;
+}
+
+
+.picAndText
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 1px;
+
+}
+.smallImg
+{
+    background:linear-gradient(rgba(0,0,0,0.70),rgba(0,0,0,0.1)),url("dumbell2.jpg") no-repeat;
+        background-size: cover;
+    
+}
+.smallImg .textInImg
+{
+    padding: 5%;
+    color: white;
+    text-align: center;
+}
+.smallImg .textInImg p
+{
+    line-height: 30px;
+    color: white;
+    text-align: center;
+}
+.classes
+{
+   
+    margin: 3%;
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+}
+.animatevideos{
+    grid-column: span 1;
+    
+    background:url(gymBG.jpg) no-repeat;
+    background-size: cover;
+    animation:slide 10s infinite;
+    border: #ff0000;
+}
+@keyframes slide{
+    25%{
+      background:url(sixPack.jpg)no-repeat;
+      background-size: cover;
+    }
+    50%{
+      background:url(bodyBuliding.jpg)no-repeat;
+      background-size: cover;
+  
+    }
+    75%{
+      background:url(dumbell2.jpg)no-repeat;
+      background-size: cover;
+      
+    }
+  }
+
+.dailyRoutine
+{
+    color: white;
+    justify-content: center;
+    background-color: #cec9c979;
+}
+.daily{
+    background-color: #ff0000;
+    padding: 1%;
+    
+}
+.list{
+    color: black;
+}
+
+.footer
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    text-align: left;
+    background-color: black;
+    padding: 1%;
+    color: white;
+    text-decoration: none;
+    list-style: none;  
+}
+
+.footer a{
+    color: white;
+    display: block;
+}
+.footer h3{
+    line-height: 50px;
+}
